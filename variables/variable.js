@@ -38,6 +38,10 @@ console.log(`Сегодня ${isweekend ? 'выходной' : 'нет выхо�
 
 //4
 
+m = 60
+g = 9.8
+console.log(`F=m*g, F=${m}*${g}, F=${m*g}`)
+
 //5
 let history =`Today the weather is very cool, the long-awaited snow is falling, and it’s -8 degrees Celsius outside, and Fahrenheit:`
 let Fahrenheit=(-8*9/5)+32
