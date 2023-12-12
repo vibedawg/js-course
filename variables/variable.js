@@ -32,15 +32,16 @@ console.log(`All people love something, and this is individual for everyone. The
 let hascoffee= true
 console.log(`у вас ${hascoffee ? 'есть' : 'нет'} кофе`)
 
-//3
+//3 
 let isweekend=false
 console.log(`Сегодня ${isweekend ? 'выходной' : 'нет выходного'} `)
 
 //4
 
-m = 60
-g = 9.8
-console.log(`F=m*g, F=${m}*${g}, F=${m*g}`)
+let m = 60
+let g = 9.8
+let f = m * g 
+console.log(` F=${m}*${g} = ${f}`)
 
 //5
 let history =`Today the weather is very cool, the long-awaited snow is falling, and it’s -8 degrees Celsius outside, and Fahrenheit:`
