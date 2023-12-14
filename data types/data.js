@@ -30,6 +30,6 @@ console.log(ex1 + ex2)
 //ex 7
 console.log(Math.ceil(Math.random () * 100))
 //ex 8
-// console.log(Math.ceil(Math.random() * 100)) + 50   ???
-//ex 9 
+console.log(Math.ceil(Math.random() * 50)+ 50) 
+//ex 9
 console.log(Math.ceil(Math.random () * 255))
