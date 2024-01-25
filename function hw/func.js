@@ -229,17 +229,10 @@
 
 // ex 2 
 // function solveQuadEquation(a, b, c) {
-//     let dics = b ** 2 - 4 * a * c
-//     if (dics > 0) {
-//         let x1 = (-b + Math.sqrt(dics)) / (2 * a);
-//         let x2 = (-b - Math.sqrt(dics)) / (2 * a);
-//         return (`${x1}, ${x2}`);
-//     } else if (dics == 0) {
-//         let x = -b / (2 * a);
-//         return (`${x}`);
-//     } else {
-//         return 0;
-//     }
+//     const d = b ** 2 - 4 * a * c
+//     const x1 = (-b + Math.sqrt(d)) / (2 * a);
+//     const x2 = (-b - Math.sqrt(d)) / (2 * a);
+//    return[x1,x2]
 // }
 // console.log(solveQuadEquation(1, 7, 12));
 
@@ -252,3 +245,206 @@
 //     return NewMassiv;
 // }
 // console.log(printArray(1, 2, 3, 4, 5, 6, 7, 8, 9, 10))
+
+
+
+// expression function
+// let solveQuadEquation = function(a, b, c) {
+//     const d = b ** 2 - 4 * a * c
+//     const x1 = (-b + Math.sqrt(d)) / (2 * a);
+//     const x2 = (-b - Math.sqrt(d)) / (2 * a);
+//    return[x1,x2]
+// }
+// console.log(solveQuadEquation(1, 7, 12));
+
+// arrow function
+// let solveQuadEquation = (a, b, c) => {
+//     const d = b ** 2 - 4 * a * c
+//     const x1 = (-b + Math.sqrt(d)) / (2 * a);
+//     const x2 = (-b - Math.sqrt(d)) / (2 * a);
+//    return[x1,x2]
+// }
+// console.log(solveQuadEquation(1, 7, 12));
+
+
+// lvl 2 
+// ex 13
+// let evensAndOdds = (number) => {
+
+//     let Evens = 0 
+//     let Odds = 0
+//     for(let i = 0; i <= number; i++){
+//         if(i % 2 == 0){
+//             Evens += i
+//         }
+//         else{
+//             Odds += i
+//         }
+//     }
+//     return `${Evens},${Odds}`
+//   }
+  
+// console.log(evensAndOdds(100));
+
+// ex 14
+// let SumNum =(...nums) => {
+//     let sum = 0;
+//     for(let num of nums) {
+//         sum+=num
+//     }
+//     return sum
+// }
+// console.log(SumNum(1,2,3))
+
+// ex 15
+// let randomUserIp = () => {
+//     const a = () => Math.floor(Math.random() * 255);
+//     return `${a()}.${a()}.${a()}.${a()}`;
+// }
+
+// const randomUserIP = randomUserIp();
+// console.log(randomUserIP);
+
+// ex 16
+// let randomMacAddress = () => {
+//     const b = () => Math.floor(Math.random() * 255);
+//     return `${b()}.${b()}.${b()}.${b()}`;
+// }
+
+// const randomUserIP = randomMacAddress();
+// console.log(randomUserIP);
+
+// ex 17
+// let randomHexaNumberGenerator= () => {
+//     const randomHexa = Math.floor(Math.random() * 5165196).toString(16);
+//     return `#${randomHexa}`;
+// }
+// console.log(randomHexaNumberGenerator());
+
+
+// lvl 13
+// ex 13
+// let array = [1,2,3,4,5]
+// let sum = 0
+// for(let i=0;i <= array.length - 1; i++){
+//     sum += array[i];
+// }
+// return sum/array.length;
+
+// ex 16
+// let array = [1,2,3,4,5]
+// for(let i = 0; i< array.length; i++){
+//     for(let j =0; j< array.length;j++){ 
+//         if(i==j){
+//             continue
+//         }
+//         console.log(array[i]*array[j])
+//     }
+// }
+
+
+// for(let i = 1; i<= 10; i++){
+//     for(let j = 1; j <= 10; j++){
+//         console.log(`${i} x ${j} = ${i*j}`)
+//     }
+// }
+
+
+// for(let i = 1; i <= 10; i ++ ){
+//     for(let j =1;j<=10; j++){
+//         if(j%2==0){
+//             console.log(`${i} x ${j} = ${i*j}`);
+//         }
+//     }
+// }
+
+
+// let nestedArray = [
+//     [1,2,3,4,5],
+//     [6,7,8,9,0],
+//     [10,11,12,13,14],
+//     [15,16,17,18,19]
+// ]
+
+// console.log(nestedArray[0]); //   [1,2,3,4,5]
+// console.log(nestedArray[3]); //  [15,16,17,18,19]
+// console.log(nestedArray[2][3]); // 13
+
+// for(let i = 0; i < 4; i++){
+//     // console.log(nestedArray[i]);
+//     for(let j = 0; j < 5;j++){
+//         console.log(nestedArray[i][j]);
+//     }
+// }
+
+
+// let nestedArray = [
+//     [1,2,3,4,5],
+//     [6,7,8,9,0],
+//     [11,12,13,14,15],
+//     [16,17,18,19,20],
+//     [21,22,23,24,25]
+
+// ]
+// for(let i = 0; i< 5;i++){
+//     for(let j = 0; j< 6;j++){
+//        if(i==j){
+//         console.log(nestedArray[i][j]);
+//        } 
+//     }
+// } // 1,7,13,19,25
+
+
+// for(let i = 0; i< 5;i++){
+//     for(let j = 0; j< 6;j++){
+//        if(i+j==4){
+//         console.log(nestedArray[i][j]);
+//        } 
+//     }
+// } // 5,9,13,17,21
+
+// for(let i = 0; i< 5;i++){
+//     for(let j = 0; j< 6;j++){
+//        if(i+j==4){
+//         console.log(nestedArray[i][j]);
+//        } 
+//     }
+// }  // 21,17,13,9,5
+
+
+// for(let i = 3; i >= 0;i--){
+//     for(let j = 4; j>=0;j--){
+//         console.log(nestedArray[i][j]);
+//     }
+// } // 25,24,23,......1
+
+
+// for(let i = 0; i < 5;i++){
+//     for(let j = 0; j< 6;j++){
+//         nestedArray[i][j]=0
+//        if(i==j || i+j==4){
+//         nestedArray[i][j]= 1
+//        } 
+//        else{
+//         nestedArray[i][j]=0
+//        }
+//     }
+// }
+// console.log(nestedArray);
+
+
+
+// for (let i = 2; i <= 100; i++) {
+//     let isPrime = true;
+  
+//     for (let j = 2; j < i; j++) {
+//       if (i % j === 0) {
+//         isPrime = false;
+//         break;
+//       }
+//     }
+  
+//     if (isPrime) {
+//       console.log(i);
+//     }
+//   }

@@ -49,4 +49,14 @@
 // fruits.push(newFruit) // to the end
 // fruits.pop() // removes from the end
 // fruits.shift() // removes from the beginning
+// fruits.splice(2,1) // [1,2,3,4,5] removes 3
 // alert(fruits)
+
+
+
+
+
+
+
+
+
